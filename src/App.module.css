@@ -1,0 +1,210 @@
+:root {
+  --light: whitesmoke;
+  --dark: #181a1b;
+  --grey: #6b817e;
+}
+
+body {
+  margin: 0;
+}
+
+.lastOperation,
+button {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.containerLight {
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+.containerDark {
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+.calculator {
+  width: 20rem;
+  margin: 2rem;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 1.65rem;
+}
+
+.calculatorLight {
+  border-color: var(--dark);
+}
+
+.calculatorDark {
+  border-color: var(--light);
+}
+
+.header {
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.headerButton {
+  font-size: 1.4rem;
+  border: none;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.display {
+  min-height: 4rem;
+  padding-right: 1rem;
+}
+
+.displayContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lastOperation {
+  min-height: 1rem;
+}
+
+.currentOperation {
+  min-height: 3rem;
+  margin-left: auto;
+  font-size: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.keyboard {
+  min-height: 23rem;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "ac backspace divider module"
+    "seven eight nine multiplication"
+    "four five six substraction"
+    "one two three addition"
+    "sign zero point result";
+}
+
+.keyboardButton {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.65rem;
+  color: inherit;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.rounded {
+  border-radius: 50%;
+  font-weight: 400;
+}
+
+.roundedDark {
+  background-color: var(--grey);
+}
+
+.operation {
+  color: #009788;
+}
+
+.operationDark {
+  background-color: var(--light);
+}
+
+.ac {
+  grid-area: ac;
+}
+
+.backspace {
+  grid-area: backspace;
+}
+
+.sign {
+  grid-area: sign;
+}
+
+.point {
+  grid-area: point;
+}
+
+.divider {
+  grid-area: divider;
+}
+
+.module {
+  grid-area: module;
+}
+
+.multiplication {
+  grid-area: multiplication;
+}
+
+.substraction {
+  grid-area: substraction;
+}
+
+.addition {
+  grid-area: addition;
+}
+
+.result {
+  grid-area: result;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
